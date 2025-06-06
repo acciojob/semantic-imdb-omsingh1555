@@ -8,43 +8,61 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
     }
+
     header, nav, section, aside, footer {
       padding: 20px;
       margin: 10px;
-      background-color: white;
+      background-color: #ffffff;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     header {
       background-color: #333124;
       color: white;
       text-align: center;
     }
+
     nav {
       background-color: #e0d7c3;
       display: flex;
       justify-content: center;
       gap: 20px;
     }
+
     nav a {
       text-decoration: none;
       color: #333124;
       font-weight: bold;
     }
+
     nav a:hover {
-      color: white;
       background-color: #333124;
+      color: white;
       padding: 5px 10px;
       border-radius: 5px;
     }
+
     footer {
       text-align: center;
       font-style: italic;
       background-color: #ddd;
+    }
+
+    details {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -60,9 +78,11 @@
     <a href="#quote" id="nav-quote">Quotes</a>
   </nav>
 
-  <section id="summary">
-    <h2>Summary</h2>
-    <p>"Inception" is a science fiction thriller that explores the concept of dreams within dreams. Dom Cobb, a skilled thief, is given a final chance at redemption by performing the impossible—**inception**, planting an idea into someone's subconscious. The movie takes viewers through complex dream layers, action-packed sequences, and mind-bending twists.</p>
+  <section>
+    <details>
+      <summary>Summary</summary>
+      <p>"Inception" is a science fiction thriller that explores the concept of dreams within dreams. Dom Cobb, a skilled thief, is given a final chance at redemption by performing the impossible—<strong>inception</strong>, planting an idea into someone's subconscious. The movie takes viewers through complex dream layers, action-packed sequences, and mind-bending twists.</p>
+    </details>
   </section>
 
   <section id="actor">
